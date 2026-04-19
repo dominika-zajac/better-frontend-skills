@@ -16,6 +16,10 @@ The `description` field in frontmatter is how agents (and humans) discover when 
 
 Skills are Markdown. You can paste them into system prompts, rules files, or notepads. For Cursor-specific paths, see [cursor-setup.md](cursor-setup.md).
 
+## Install with the skills CLI ([skills.sh](https://skills.sh/))
+
+If you use the [skills](https://github.com/vercel-labs/skills) CLI (`npx skills add owner/repo`), this repository’s layout is already compatible. See [skills-sh.md](skills-sh.md) for commands, Cursor targeting, and telemetry.
+
 ## Related collections
 
-This layout matches the pattern used by [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills): a top-level `skills/` directory with one `SKILL.md` per skill.
+This layout matches the pattern used by [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills): a top-level `skills/` directory with one `SKILL.md` per skill. That same shape is what the skills.sh ecosystem expects.

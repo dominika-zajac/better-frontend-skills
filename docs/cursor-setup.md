@@ -1,6 +1,16 @@
 # Using better-frontend-skills with Cursor
 
-## Option 1: Project rules (recommended for one repo)
+## Option 0: skills CLI ([skills.sh](https://skills.sh/))
+
+The [skills](https://github.com/vercel-labs/skills) CLI can install straight from GitHub into the paths Cursor uses (for example `.agents/skills/` in the project, or `~/.cursor/skills/` when global).
+
+```bash
+npx skills add dominika-zajac/better-frontend-skills --skill accessibility-audit --agent cursor
+```
+
+Use `-g` for a user-wide install. See [skills-sh.md](skills-sh.md) for full examples, deep links, and `DISABLE_TELEMETRY=1`.
+
+## Option 1: Project rules (manual copy)
 
 Copy the skill into `.cursor/rules/` so it loads with that project (rename optional):
 
@@ -22,16 +32,6 @@ To track updates from git without copying, symlink the folder (adjust paths):
 
 ```bash
 ln -s "$(pwd)/better-frontend-skills/skills/accessibility-audit" ~/.cursor/skills/accessibility-audit
-```
-
-## Option 3: Git submodule
-
-In a project where you want the pack versioned:
-
-```bash
-git submodule add https://github.com/<YOUR_ORG>/better-frontend-skills.git third_party/better-frontend-skills
-mkdir -p .cursor/rules
-cp third_party/better-frontend-skills/skills/accessibility-audit/SKILL.md .cursor/rules/accessibility-audit.md
 ```
 
 ## Usage tips
