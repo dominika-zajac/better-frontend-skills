@@ -7,6 +7,8 @@ description: Runs comprehensive WCAG-oriented web accessibility audits using Chr
 
 This document defines a reusable procedure for performing comprehensive accessibility audits on web pages using Chrome DevTools MCP.
 
+> **Next step**: Once you have a report, use the [`accessibility-fix`](../accessibility-fix/SKILL.md) skill to apply fixes to source code and re-verify.
+
 ## Prerequisites
 - `chrome-devtools-mcp` must be configured and available in the IDE environment.
 
